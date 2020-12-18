@@ -1,0 +1,131 @@
+@import './utils';
+
+$teal: #0ccda3;
+
+.sidebar__cart {
+  background-image: linear-gradient(to right, #0ccda3, #c1fcd3);
+}
+body {
+  margin-top: 81px !important;
+  margin-bottom: 300px !important;
+}
+header {
+  position: relative;
+  & .menu {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+}
+
+.text-center {
+  text-align: center;
+  h1 {
+    margin: 0;
+  }
+}
+
+.text-red {
+  color: red;
+}
+
+.logo {
+  .text {
+    letter-spacing: 12px;
+  }
+  & a,
+  & a:visited {
+    color: #000;
+    transition: all ease 0.5s;
+  }
+  & a:hover {
+    color: #0ccda3;
+    transition: all ease 0.5s;
+  }
+}
+
+.header__banner {
+  margin-top: -12px;
+  position: relative;
+  & .slider {
+    min-height: 620px !important;
+    height: auto !important;
+  }
+}
+.verticalCategory {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  z-index: 1;
+  & .menu {
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none !important;
+    border: none !important;
+    margin-top: 1px;
+  }
+}
+
+.categoryBox {
+  background: $teal !important;
+  color: #fff !important;
+  text-align: center;
+  &:hover {
+    background: darken($teal, 5%) !important;
+  }
+
+  & .menu {
+    min-width: 250px !important;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.combo-card {
+  padding: 1.2rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.combo-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.combo-list-item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  &-image {
+    flex: 1;
+  }
+
+  &-content {
+    flex: 2;
+  }
+}
+
+.add-to-cart-container {
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem 0;
+}
+
+.stroke-line {
+  text-decoration: line-through;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.w-100 {
+  width: 100% !important;
+}
